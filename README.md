@@ -12,5 +12,8 @@ Bon Voyage Website: Allows the user to book hotels, restaurants, events, spa.
                ->Contact number should be 10 digits. No special characters.
                ->Date of Birth should be of format - MM/DD/YYYY OR YYYY/MM/DD.
                  Invalid format - DD/MM/YYYY and YYYY/DD/MM.
+           When the user fills out the form with valid values and then clicks on Submit, he will be redirected 
+           to login page.
+           When user clicks on Home, he will be redirected to home page.
           
       
