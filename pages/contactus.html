@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BonVoyage!</title>
+  <link rel = "stylesheet" href="../css/contactus.css"/>
+</head>
+<body>
+    <header class="header">
+        <div class = "container">
+          <!-- <div id = "reserve">Reserve Now</div> -->
+          <div style="display: flex;flex-direction: row; align-items: center;">
+            <h1 style="margin-left: 5em;">Welcome to the Bon Voyage !!!</h1>
+            <h2 style="margin-left: 22em;" id="home">Home</h2>
+        </div>
+          </div>
+      </header>
+  <div class="contactcontainer">
+    <h1 style="padding-bottom: .5em;">Contact</h1>
+    <h2>Questions? We are here to help!</h2>
+  </div>
+  
+  <div class="contactinfogrid">
+        <div style="border: solid; padding: 2em; border-style: ridge; margin-left: 9em; height: 95%;">
+            <h3>Contact Information</h3>
+            <p style="font-weight: bold;">General Inquiries: <p>Please email us using the contact form below or call 1-800-560-1617</p></p>
+            <p style="font-weight: bold;">Customer Support: <p>If you need help, please <a href="#">submit a ticket</a> or call 1-800-560-1617</p></p>
+            <div class="contactform">
+                <label>Email<label class="mandatory">*</label></label>
+                <br/>
+                <input 
+                      type="text" 
+                      style="height:25px; font-size: 15px;"
+                      required
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                      title="Enter a valid email"
+                />
+                <br/>
+                <label>First Name<label class="mandatory">*</label></label>
+                <br/>
+                <input type="text" style="height:25px; font-size: 15px;"/>
+                <br/>
+                <label>Last Name<label class="mandatory">*</label></label>
+                <br/>
+                <input type="text" style="height:25px; font-size: 15px;"/>
+                <br/>
+                <label>Comments<label class="mandatory">*</label></label>
+                <br/>
+                <input type="text" style="height:100px; font-size: 15px;"/>
+                <br/>
+                <div style="align-self: center;">
+                  <button type = "submit" class="btn-submit">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+        <div style="border: solid; padding: 2em; border-style: ridge; width: 50%; height: 35%;">
+            <h3>Connect with us</h3>
+            <ul></ul>
+                <li class="connect">Linked In</li> 
+                <li class = "connect">Facebook</li>
+                <li class = "connect">Twitter</li>
+              </ul>
+        </div>
+      
+  </div>
+  <script src="../js/contactus.js"></script>
+</body>
+</html>

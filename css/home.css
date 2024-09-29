@@ -1,0 +1,202 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;   
+}
+
+body {
+  background-color: white;
+  color: black;
+  background: url(../img/background.jpg) no-repeat center;
+  background-blend-mode: color-burn;
+}
+
+
+.container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: left;
+}
+
+header {
+  background-color: #595fb6;
+  color: white;
+  padding: 1em 0;
+}
+
+#book{
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 25px;
+  animation: gradientText 5s ease-in-out infinite;
+}
+
+@keyframes gradientText {
+  0% {
+    color: red;
+  }
+
+  25% {
+    color: yellow;
+  }
+
+  50% {
+    color: brown;
+  }
+
+  100% {
+    color: orange;
+  }
+}
+
+#reserve{
+  font-size: 30px;
+  align-items: flex-start;
+}
+
+#seamless{
+  color: #770505;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+
+  .get-started-btn {
+    align-content: center;
+    margin-left: 50px;
+    background-color: black;
+    color: white;
+    padding: 12px;
+    width: 40%;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: color 0.5s ease, text-shadow 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out;
+  }
+
+.get-started-btn:hover {
+  cursor: pointer;
+  background-color: #0c0802;
+  color: #ccc;
+  text-shadow: 0 0 5px #595fb6, 0 0 10px #b65959, 0 0 15px #b6b059,
+  0 0 20px #b434db, 0 0 35px #316d96, 0 0 40px #e03030;
+
+  box-shadow:0 0 5px #595fb6, 0 0 10px #b65959, 0 0 15px #b6b059,
+  0 0 20px #b434db, 0 0 35px #316d96, 0 0 40px #e03030;
+}
+
+.image-grid {
+ display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr ;
+  grid-template-areas:
+    "restaurants hotels"
+    "events spas";
+  height: 75vh;
+  gap: 1em;
+  margin: .5em;
+  color: black;
+  border-radius: 50%;
+  justify-items: center;
+}
+
+.nav-links {
+  display: flex;
+  font-weight: bold;
+  list-style: none;
+  font-size: 20px;
+}
+
+.nav-links li {
+  margin-left: 2em;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+
+}
+
+.nav-links li a:hover {
+  color: black;
+}
+
+.category-item {
+  
+  background-color: gray;
+  color: black;
+  padding: 2em;
+  border-radius: 8px;
+  width: 85%;
+  box-shadow: 0 4px 8px rgba(18, 17, 17, 0.3);
+  
+}
+
+.category-item>img{
+  width: 200px;
+  transition: transform 0.3s ease-in-out;
+}
+.category-item:hover {
+  transform: scale(1.3);
+  background-color: #d1ded1;
+  color:#3737a1;
+}
+
+.section-class {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 3em;
+}
+
+.main-image img {
+  margin: 0 auto;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  justify-content: center;
+}
+
+#contactus:hover{
+  cursor: pointer;
+}
+
+#content{
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  h1 {
+      margin-bottom: 1em;
+  }
+
+  .nav-links {
+      flex-direction: row;
+      width: 100%;
+  }
+
+  .nav-links li {
+      margin-left: 2em;
+      margin-bottom: 0.5em;
+  }
+
+  .image-grid {
+      display: grid;
+      flex-direction: column;
+      align-items: center;
+      grid-template-columns: 1fr;
+  }
+
+  .category-item {
+      width: 100%;
+  }
+}
