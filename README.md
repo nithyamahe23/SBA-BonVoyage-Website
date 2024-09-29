@@ -15,5 +15,6 @@ Bon Voyage Website: Allows the user to book hotels, restaurants, events, spa.
            When the user fills out the form with valid values and then clicks on Submit, he will be redirected 
            to login page.
            When user clicks on Home, he will be redirected to home page.
+
           
       
