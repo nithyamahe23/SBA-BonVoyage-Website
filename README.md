@@ -32,7 +32,7 @@ Bon Voyage Website: Allows the user to book hotels, restaurants, events, spa.
         It displays the previous booking history of the user and also allows the user to make new booking.
         
 5.contactus.html:
-        Provides the contact information of the website to the user.        
+        Provides the contact information of the website to the user.      
         Also provides a contact form for the user to submit.        
         If we hover over connect with us link items, the color changes and cursor changes to pointer.
 
